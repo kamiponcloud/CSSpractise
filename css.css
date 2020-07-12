@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*css1纸张滑出*/
+
+
+
+.css1{
+    position: relative;
+    height: 100vh;
+    background-color: #85a59b;
+}
+
+.area1{
+
+}
+
+.page1,.page2,.page3,.page4{
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: -60%;
+    box-shadow: 2px 0 10px black;
+    transition: all 1s ease;
+}
+
+.page1{
+    width: 93vw;
+
+}
+.page2{
+    width: 86vw;
+}
+.page3{
+    width: 79vw;
+}
+.page4{
+    width: 72vw;
+}
+
+.page1-aside,.page2-aside,.page3-aside,.page4-aside{
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    line-height: 6vh;
+    height: 6vh;
+    width: 5vw;
+    left: 99%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow:4px 3px 7px 0 rgba(0, 0, 0, 0.32);
+}
+
+.page1-aside{
+    top: 45%;
+}
+.page2-aside{
+    top: 35%;
+}
+.page3-aside{
+    top: 25%;
+}
+.page4-aside{
+    top: 15%;
+}
+
+/*遮住阴影*/
+.page4-aside::after,.page1-aside::after,.page2-aside::after,.page3-aside::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 20vh;
+    width: 3vw;
+    left: -46%;
+    top: -100%;
+
+}
+.page4-aside::after{
+    background-color:#fd6370;
+}
+.page1-aside::after{
+    left: -42%;
+    background-color:#d8ceb4;
+}
+.page2-aside::after{
+    left: -44%;
+    background-color:#fdfdfe;
+}
+.page3-aside::after{
+    left: -46%;
+    background-color:#fdb2a4
+}
+.area1 p{
+    position: absolute;
+    display: block;
+    left: 70%;
+    margin-left: -1em;
+    top: 20%;
+    color: skyblue;
+    width: 1em;
+    height: 5em;
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+/*布局完成，开始添加hover*/
+
+
+.area1:hover .page1{
+    left: 0;
+}
+.area2:hover .page2{
+    left: 0;
+}
+.area3:hover .page3{
+    left: 0;
+}
+.page4:hover{
+    left: 0;
+}
+
+/*模拟时钟*/
+
