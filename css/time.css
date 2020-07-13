@@ -1,7 +1,9 @@
 .time{
     position: relative;
     height: 100vh;
-    background-color: black;
+    /*background-color: black;*/
+    background: url("http://a1.qpic.cn/psc?/V10bjlEo0FTCR3/zfrllz9Q9AzvUwq**DIV0yjdXM61sQ5B98YD30nIUE7MhQXEHJR0SvsgULSXfa.wfRRiPStP8Yu4GuRKhjquqw!!/c&ek=1&kp=1&pt=0&bo=OAQ4BDgEOAQRGS4!&tl=3&vuin=1906219821&tm=1594641600&sce=60-2-2&rf=0-0") no-repeat center;
+    background-size: cover;
 }
 
 .time-body{
