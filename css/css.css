@@ -13,11 +13,6 @@
     height: 100vh;
     background-color: #85a59b;
 }
-
-.area1{
-
-}
-
 .page1,.page2,.page3,.page4{
     position: absolute;
     height: 100vh;
@@ -44,6 +39,7 @@
 .page1-aside,.page2-aside,.page3-aside,.page4-aside{
     position: absolute;
     font-size: 30px;
+
     text-align: center;
     line-height: 6vh;
     height: 6vh;

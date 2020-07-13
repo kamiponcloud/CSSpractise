@@ -1,0 +1,114 @@
+.time{
+    position: relative;
+    height: 100vh;
+    background-color: black;
+}
+
+.time-body{
+    position: absolute;
+    left: 50%;
+    margin-left: -25vh;
+    top: 50%;
+    margin-top: -25vh;
+    width: 50vh;
+    height: 50vh;
+    background-color: transparent;
+    border: 1vh solid white;
+    border-radius: 25vh;
+}
+
+
+.timenum {
+    position: absolute;
+    left: -1%;
+    top: 50%;
+    margin-top: -0.5vh;
+    width: 49vh;
+    height: 1vh;
+    border-left: 2vh solid white;
+}
+.timenum:nth-child(3n){
+    border-left: 3vh solid white;
+}
+.time1 {
+
+    transform: rotateZ(120deg);
+}
+.time2 {
+    transform: rotateZ(150deg);
+}
+.time3 {
+    transform: rotateZ(180deg);
+}
+.time4 {
+    transform: rotateZ(210deg);
+}
+.time5 {
+    transform: rotateZ(240deg);
+}
+.time6 {
+    transform: rotateZ(270deg);
+}
+.time7 {
+    transform: rotateZ(300deg);
+}
+.time8 {
+    transform: rotateZ(330deg);
+}
+.time9 {
+    transform: rotateZ(0deg);
+}
+.time10 {
+     transform: rotateZ(30deg);
+ }
+.time11 {
+    transform: rotateZ(60deg);
+}
+.time12 {
+    transform: rotateZ(90deg);
+}
+
+
+.T,.S,.M{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -0.5vh;
+    height: 1vh;
+}
+
+.S{
+    margin-left: -20vh;
+    width: 40vh;
+    border-left: 22vh solid white;
+    animation: goS 60s linear;
+}
+
+
+.M{
+    margin-left: -17.5vh;
+    width: 35vh;
+    border-left: 19.5vh solid pink;
+    animation: goS 3600s linear;
+}
+
+.T{
+    margin-left: -15vh;
+    width: 30vh;
+    border-left: 17vh solid yellow;
+    animation: goS 216000s linear;
+}
+.pointer{
+    position: absolute;
+    left: 50%;
+    margin-left: -25vh;
+    top: 50%;
+    margin-top: -25vh;
+    width: 50vh;
+    height: 50vh;
+    transform: rotateZ(90deg);
+}
+
+@keyframes goS {
+    100%{transform: rotateZ(360deg)}
+}
