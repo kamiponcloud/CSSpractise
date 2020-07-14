@@ -43,8 +43,8 @@ li{
 .icon:hover{
     background: white;
     font-size: 4.5vh;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
-    inset 10px 10px 30px rgba(0, 0, 0, 0.02);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+    inset 10px 10px 30px rgba(0, 0, 0, 0.1);
     transition: all .2s ease-out;
 }
 .icon:after{
