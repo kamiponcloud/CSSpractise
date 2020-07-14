@@ -1,0 +1,101 @@
+.Mimicicon{
+    height: 100vh;
+    padding-top: 10vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.icon-body{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.icon{
+    position: relative;
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 10vh;
+    height: 10vh;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 transparent;
+    color: white;
+    border-radius: 20px;
+    font-size: 5vh;
+    text-align: center;
+    line-height: 10vh;
+    transition: shadow .2s ease-out,font-size .2s ease-out,box-shadow .2s ease-out;
+}
+
+.icon:hover{
+    background: white;
+    font-size: 4.5vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    inset 10px 10px 30px rgba(0, 0, 0, 0.02);
+    transition: all .2s ease-out;
+}
+.icon:after{
+    position: absolute;
+    content: "";
+    font-size: 20px;
+    line-height: 10px;
+    color: #666666;
+    top: 130%;
+    left: 50%;
+    margin-left: -1em;
+}
+.QQ:after{
+    content: "QQ";
+}
+
+.icon:nth-child(2):after{
+    content: "邮箱(点这个不会跳转哦！)";
+    display: block;
+    width: 300px;
+    margin-left: -100px;
+}
+.icontime:after{
+    content: "时钟";
+}
+.iconbilibili:after{
+    content: "哔哩哔哩";
+    margin-left: -2em;
+}
+.iconbaidu:after{
+    content: "浏览器";
+    margin-left: -1.5em;
+}
+.Facebook:after{
+    content: "Facebook";
+    display: block;
+    width: 100px;
+    margin-left: -50px;
+}
+.Wechat:after{
+    content: "微信";
+}
+.picture:after{
+    content: "相册";
+}
+.phone:after{
+    content: "电话";
+}
+.youtube:after{
+    content: "YouTube";
+    display: block;
+    width: 100px;
+    margin-left: -50px;
+}

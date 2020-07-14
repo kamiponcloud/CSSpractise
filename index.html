@@ -3,15 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS动画练习</title>
+<!--    字体图标-->
+    <link rel="stylesheet" href="font-icon/font_kjczy0889b/iconfont.css">
 <!--    纸张滑出-->
     <link rel="stylesheet" href="css/css.css">
 <!--    时钟-->
     <link rel="stylesheet" href="css/time.css">
+<!--    拟态化网页图标 -->
+    <link rel="stylesheet" href="css/Mimicicon.css">
+
 </head>
 <body>
+
+<!--拟态化网页图标-->
+
+<section class="Mimicicon">
+
+    <ul class="icon-body">
+        <a href="https://im.qq.com/"><li class="QQ icon iconfont" style="color: rgb(32, 144, 210)">&#xe61e;</li></a>
+        <li class="icon iconfont" style="color: rgb(32, 144, 210)">&#xe64d;</li>
+        <a href="#-time"><li class="icontime icon iconfont" style="color: black">&#xe6be;</li></a>
+        <a href="https://www.bilibili.com/"><li class="iconbilibili icon iconfont" style="width: 15vh;color: rgb(251, 114, 153)">&#xe6b4;</li></a>
+        <a href="https://www.baidu.com/"><li class="iconbaidu icon iconfont" style="color: rgb(32, 144, 210)">&#xe68f;</li></a>
+        <a href="#"><li class="Facebook icon iconfont" style="color: rgb(58, 88, 152)">&#xe511;</li></a>
+        <a href="#"><li class="Wechat icon iconfont" style="color: rgb(37, 218, 92)">&#xe620;</li></a>
+        <a href="#paper"><li class="picture icon iconfont" style="color: rgb(96, 167, 210)">&#xe6ab;</li></a>
+        <a href="#"><li class="phone icon iconfont" style="color: rgb(32, 144, 210)">&#xe603;</li></a>
+        <a href="https://www.youtube.com/"><li class="youtube icon iconfont" style="color: rgb(217, 29, 7)">&#xea07;</li></a>
+    </ul>
+
+</section>
+
 <!--模拟时钟/=-->
 
-<section class="time">
+<section class="time" id="-time">
     <div class="time-body">
         <div class="timemark">
             <div class="timenum time1"></div>
@@ -36,7 +61,7 @@
 </section>
 
 <!--纸张滑出-->
-    <section class="css1">
+    <section class="css1" id="paper">
         <div class="area1">
         <div class="page1" style="background-color:#d8ceb4;">
             <aside class="page1-aside" style="background-color:#d8ceb4;">油</aside>
