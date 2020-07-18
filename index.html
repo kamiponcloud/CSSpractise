@@ -11,9 +11,75 @@
     <link rel="stylesheet" href="css/time.css">
 <!--    拟态化网页图标 -->
     <link rel="stylesheet" href="css/Mimicicon.css">
+<!--    计算机（未实现）-->
+    <script src="js/jisuanji.js"></script>
+    <link rel="stylesheet" href="css/jisuanji.css">
+<!--    pornhub排版生成器-->
+    <link rel="stylesheet" href="css/pornhub.css">
+    <script src="js/pornhub.js"></script>
 
 </head>
 <body>
+
+<!--    pornhub排版生成器-->
+<section class="pornhub">
+    <div class="result">
+        <div class="result-body">
+            <span id = "porn1">Porn</span>
+            <span id = "hub1" >hub</span>
+        </div>
+    </div>
+
+    <div class="input">
+        <div class="input-body">
+            <input type="text" id = "porn" class="input1" value="Porn">
+            <span class="top"></span>
+            <span class="left"></span>
+            <span class="right"></span>
+            <span class="bottom"></span>
+        </div>
+        <div class="input-body">
+            <input type="text" id= "hub" class="input2" value="hub">
+            <span class="top"></span>
+            <span class="left"></span>
+            <span class="right"></span>
+            <span class="bottom"></span>
+        </div>
+    </div>
+    <input id = "pbtn" type="button" value="点击生成" onclick="creatpornhub()">
+</section>
+<!--网页计算机（未实现）-->
+
+<section class="jisuanji">
+    <div class="jisuanji-body">
+        <h6>计算器</h6>
+        <div id="in"></div>
+        <div id="out"></div>
+        <div class="inputbody">
+            <input id="c" class="btn" type="button" value="c">
+            <input id="x²" class="btn" type="button" value="x²">
+            <input id="del" class="btn" type="button" value="del">
+            <input id="➗" class="btn" type="button" value="➗" >
+            <input id="7" class="btn btnnum" type="button" value="7" >
+            <input id="8" class="btn btnnum" type="button" value="8" >
+            <input id="9" class="btn btnnum" type="button" value="9" >
+            <input id="✖" class="btn" type="button" value="✖" >
+            <input id="4" class="btn btnnum" type="button" value="4" >
+            <input id="5" class="btn btnnum" type="button" value="5" >
+            <input id="6" class="btn btnnum" type="button" value="6" >
+            <input id="➖" class="btn" type="button" value="➖" >
+            <input id="1" class="btn btnnum" type="button" value="1" >
+            <input id="2" class="btn btnnum" type="button" value="2" >
+            <input id="3" class="btn btnnum" type="button" value="3" >
+            <input id="➕" class="btn" type="button" value="➕" >
+            <input id="abs()" class="btn" type="button" value="abs()">
+            <input id="0" class="btn" type="button" value="0" >
+            <input id="." class="btn" type="button" value=".">
+            <input id="＝" class="btn" type="button" value="＝" >
+        </div>
+    </div>
+
+</section>
 
 <!--拟态化网页图标-->
 

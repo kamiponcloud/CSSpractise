@@ -1,0 +1,42 @@
+.jisuanji{
+    font-family: "Microsoft YaHei UI Light";
+    position: relative;
+    height: 100vh;
+    background-color: skyblue;
+}
+.jisuanji-body{
+    position: absolute;
+    height: 70vh;
+    width: 22vw;
+    background-color: #ededee;
+    left: 50%;
+    top: 50%;
+    margin-left: -11vw;
+    margin-top: -35vh;
+}
+.jisuanji-body>h6{
+    line-height: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+#in{
+    margin-top: 20px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#out{
+    height: 100px;
+}
+
+.inputbody{
+    height: 333px;
+    width: 22vw;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn{
+    height: 20%;
+    width: 25%;
+}

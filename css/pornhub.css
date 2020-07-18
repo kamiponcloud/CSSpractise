@@ -1,0 +1,150 @@
+.pornhub{
+    position: relative;
+    height: 100vh;
+    background-color: #1b1b1c;
+}
+
+.result{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    left: 10%;
+    top:35%;
+    background-color: #1b1b1c;
+}
+
+.input{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 57%;
+    top: 35%;
+}
+
+.input-body,
+.input1,
+.input2{
+    width: 300px;
+    height: 50px;
+}
+
+.input-body{
+    position: relative;
+    margin: 30px 0;
+}
+
+.input1,
+.input2 {
+    font-family: "Microsoft YaHei UI Light";
+    background-color: #363637;
+    height: 50px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 24px;
+    padding-left: 5px;
+    outline: none;
+    border: none;
+    color: #b6bfc0;
+}
+
+.input-body span{
+    content: "";
+    display: block;
+    transition: transform .1s ease-in-out;
+}
+.bottom{
+    position: absolute;
+    top:48px;
+    left: 0px;
+    width: 300px;
+    height: 2px;
+    background-color: #fd9801;
+    transform: scaleX(0.3);
+    transition: all 0.4s ease-in;
+}
+
+.input-body:hover .bottom{
+    transform: scaleX(1);
+    transition: all 0.4s ease-in;
+}
+.top{
+    position: absolute;
+    top: 0px;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition-delay: .2s;
+    width: 300px;
+    height: 2px;
+    background-color: #fd9801;
+}
+.left,.right{
+    position: absolute;
+    width: 2px;
+    height: 48px;
+    transform: scaleY(0);
+    background-color: #fd9801;
+}
+.left{
+    left: 0;
+    top: 0px;
+    transform-origin: bottom center;
+    transition-delay: .3s;
+}
+.right{
+    left: 298px;
+    top: 0;
+    transform-origin: top center;
+    transition-delay: .1s;
+}
+
+input:focus ~ .right {
+    transform: scaleY(1);
+    transition-delay: .1s;
+    transform-origin: bottom center;
+}
+input:focus ~ .left {
+    transform: scaleY(1);
+    transform-origin: top center;
+    transition-delay: .3s;
+}
+input:focus ~ .top {
+    transform: scaleX(1);
+    transition-delay: .2s;
+    transform-origin: right center;
+}
+input:focus ~ .bottom {
+    transform: scaleX(1);
+    transform-origin: center center;
+}
+
+.result-body{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-weight: 900;
+    font-size: 30px;
+}
+.result-body>span:nth-child(1){
+    position: relative;
+    margin-left: 5px;
+    color: white;
+}
+.result-body>span:nth-child(2){
+    position: relative;
+    margin-left: -5px;
+    background-color: #fd9801;
+    border:2px solid #fd9801;
+    border-radius: 3px;
+}
+
+
+
+#pbtn{
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    top: 65%;
+    margin-top: -30px;
+    left: 47%;
+    margin-left: -20px;
+}
