@@ -1,0 +1,200 @@
+.laopo{
+    position: relative;
+    font-family: 华文仿宋;
+    height: 100vh;
+    width: 100%;
+    background-color: skyblue;
+    overflow: hidden;
+}
+.tips{
+    position: absolute;
+    top: 120px;
+    right: 70px;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    transform: rotateZ(40deg);
+}
+.mail{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    margin-left: -350px;
+    margin-top: -250px;
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.mailbody{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px #666666;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    animation: lower 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.2s;
+}
+.tixing{
+    position: absolute;
+    left: -10px;
+    bottom: -1px;
+    box-sizing: content-box;
+    width: 88px;
+    border: 316px solid transparent ;
+    border-bottom-color: pink;
+}
+.tixing:after{
+    content: "";
+    position: absolute;
+    top: 165px;
+    left: -16px;
+    width: 500px;
+    height: 91px;
+    background-color: pink;
+    transform: rotateZ(45deg);
+    box-shadow: 10px -10px 15px rgba(102, 102, 102, 0.3);
+}
+.tixing:before{
+    content: "";
+    position: absolute;
+    top: 165px;
+    right: -16px;
+    width: 500px;
+    height: 91px;
+    background: pink;
+    transform: rotateZ(-45deg);
+    box-shadow: -10px -10px 15px rgba(102, 102, 102, 0.3);
+}
+.ju{
+    position: absolute;
+    top: 185px;
+    left: 50%;
+    margin-left: -44px;
+    width: 88px;
+    height: 10px;
+    background-color: black;
+    box-shadow: 0px 10px 15px #666666;
+}
+.mailleft{
+    position: absolute;
+    left: -220px;
+    width: 430px;
+    height: 500px;
+    box-shadow: 0 0 10px #666666;
+    background: linear-gradient(pink,white);
+    transform: rotateZ(121deg);
+}
+.mailright{
+    position: absolute;
+    right: -220px;
+    width: 430px;
+    height: 500px;
+    box-shadow: 0 0 10px #666666;
+    background: linear-gradient(pink,white);
+    transform: rotateZ(-121deg);
+}
+.open{
+    position: absolute;
+    top: 320px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 351px solid transparent;
+    border-top-color: white;
+    border-top-width: 320px;
+    color: pink;
+    /*overflow: hidden;*/
+}
+
+.openbody{
+    position: absolute;
+    z-index: 6;
+    top: -320px;
+    width: 700px;
+    height: 640px;
+    transform-origin: center center;
+    transform: rotateX(0deg);
+    transition: all 0.5s linear;
+    animation: open 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.laopocard{
+    position: absolute;
+    z-index: 1;
+    /*z-index: 10;*/
+    top: 60%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 10px #666666;
+    background-color: white;
+    animation: laopo 3s linear;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+
+.open>span{
+    position: absolute;
+    top: -120px;
+    margin-left: -40px;
+    font-size: 80px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
+
+@keyframes open {
+    100%{transform: rotateX(180deg);z-index: 0}
+}
+
+#laopobtn{
+    position: absolute;
+    z-index: 3;
+    top: 70%;
+    margin-left: -3.5em;
+    left: 50%;
+    opacity: 0;
+    animation: btn 1s linear;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes btn {
+    100%{opacity: 1}
+}
+
+.laopoimg{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -150px;
+    padding-top: 300px;
+    width: 300px;
+    height: 300px;
+    background-color:yellow;
+
+}
+
+.laopoimg>p{
+    line-height: 30px;
+    border-bottom: 2px solid #666666;
+}
+
+@keyframes laopo {
+    50%{top: -45%;z-index: 1}
+    100%{top: 50%;transform: scale(1.5);z-index: 5}
+}
