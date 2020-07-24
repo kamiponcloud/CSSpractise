@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS动画练习</title>
+<!--    导航栏-->
+    <link rel="stylesheet" href="css/nav.css">
 <!--    字体图标-->
     <link rel="stylesheet" href="font-icon/font_kjczy0889b/iconfont.css">
 <!--    纸张滑出-->
@@ -17,12 +19,56 @@
 <!--    pornhub排版生成器-->
     <link rel="stylesheet" href="css/pornhub.css">
     <script src="js/pornhub.js"></script>
-
+<!--    老婆的信封   -->
+    <link rel="stylesheet" href="css/laopo.css">
+    <script src="js/laopo.js"></script>
 </head>
 <body>
+<!--    导航栏-->
+<nav>
+    <ul>
+        <li>导航栏</li>
+        <li><a href="#-laopo">老婆的信封</a></li>
+        <li><a href="#-pornhub">p站排版生成器</a></li>
+        <li><a href="#-jisuanji">计算机（未实现</a></li>
+        <li><a href="#-Mimicicon">拟态化网页图标</a></li>
+        <li><a href="#-time">时钟</a></li>
+        <li><a href="#paper">纸张滑出</a></li>
+    </ul>
+</nav>
 
-<!--    pornhub排版生成器-->
-<section class="pornhub">
+
+<!--    老婆的信封   -->
+
+<section class="laopo" id="-laopo">
+    <div class="tips">亲爱的在吗？这是给你的信哦，<br>点击打开看看吧~</div>
+   <div class="mail">
+       <div class="mailbody">
+           <div class="mailleft"></div>
+           <div class="mailright"></div>
+           <div class="ju"></div>
+           <div class="tixing"></div>
+       </div>
+
+       <div class="laopocard">
+            <div class="laopoimg">
+                <p>好久不见，过的怎么样了？</p>
+            </div>
+       </div>
+
+       <div class="openbody">
+           <div class="open">
+               <span class="iconfont">&#xe608;</span>
+           </div>
+       </div>
+
+       <input id = "laopobtn" type="button" value="拿出来看看吧！">
+   </div>
+</section>
+
+<!--    pornhub排版生成器    -->
+
+<section class="pornhub" id="-pornhub">
     <div class="result">
         <div class="result-body">
             <span id = "porn1">Porn</span>
@@ -50,7 +96,7 @@
 </section>
 <!--网页计算机（未实现）-->
 
-<section class="jisuanji">
+<section class="jisuanji" id="-jisuanji">
     <div class="jisuanji-body">
         <h6>计算器</h6>
         <div id="in"></div>
@@ -83,7 +129,7 @@
 
 <!--拟态化网页图标-->
 
-<section class="Mimicicon">
+<section class="Mimicicon" id="-Mimicicon">
 
     <ul class="icon-body">
         <a href="https://im.qq.com/"><li class="QQ icon iconfont" style="color: rgb(32, 144, 210)">&#xe61e;</li></a>

@@ -48,6 +48,13 @@
       "unicode_decimal": 58641
     },
     {
+      "icon_id": "3858842",
+      "name": "爱心",
+      "font_class": "aixin",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
       "icon_id": "5427697",
       "name": "微信",
       "font_class": "weixin",

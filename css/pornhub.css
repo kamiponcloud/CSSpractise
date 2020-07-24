@@ -116,7 +116,6 @@ input:focus ~ .bottom {
     transform: scaleX(1);
     transform-origin: center center;
 }
-
 .result-body{
     position: absolute;
     top: 30%;
